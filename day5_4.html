@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--/api/v1/journals - stores the form in the dirrectory
+    post
+    get
+    ---->
+    <form action="/api/v1/journals" method="post">
+        <label for="main-title">Journal Title</label>
+        <input id="maintitle" type="text" name="title" placeholder="Enter title">
+
+        <br>
+        <lable for="journal-category">Journal Category</lable>
+        <select id="journal-category" name="category">
+            <option value="task">Task</option>
+            <option value="note">Note</option>
+            <option value="idea">Idea</option>
+            <option value="success">Success</option>
+            <option value="failure">Failure</option>
+        </select>
+        <br>
+        <label for="phone-number">phone-number</label>
+        <input id="phone-number" type="number" name="number" placeholder="Put_your_number">
+        <label for="journal-entry">Journal Entry</label>
+        <textarea id="journal-entry" name="entry" rows="5" cols="30"></textarea>
+            <br>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>

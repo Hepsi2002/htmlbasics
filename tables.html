@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>HTML TABLE</title>
+    <style>
+        table,th,td{
+            border-collapse:collapse;
+            border:2px solid black;
+            text-align: center;
+            padding:8px;
+            border-radius: 10px;
+            border-style :double;
+            border-color: blue;
+        }
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+        td:hover{
+            background-color: black;
+        }
+        td:nth-child(even),th:nth-child(even){
+            background-color: #bc2020;
+        }
+        td,th{
+            background-color: #e6ade4;
+        }
+        table{
+            
+            border-spacing: 50px;
+        }
+    </style>
+</head>    
+<body>
+        <table>
+            <caption>It is used in side a table."The caption element represents the title of the table that is its parent, if it has a parent and that is a table element."</caption>
+            <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity Sold</th>
+                <th>Total Revenue</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>ProductA</td>
+            <td>110</td>
+            <td>$2100</td>
+        </tr>
+        <tr>
+            <td>ProductB</td>
+            <td>150</td>
+            <td>$4100</td>
+        </tr>
+        <tr>
+            <td>ProductC</td>
+            <td>610</td>
+            <td>$2190</td>
+        </tr>
+        <tfoot>
+            <td colspan="2">Total Sales</td>
+            <td>$8000</td>
+        </tfoot>
+        </table>
+    </body>
+</html>
